@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Untitled 1</title>
+<link rel="stylesheet" type="text/css" href="jquery.flipcountdown.css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.flipcountdown.js"></script>
+<script>
+</script>
+
+<style>
+body, html {
+	height:100%;
+}
+div.card {
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin-top:1%;
+  height:600px;
+}
+
+div.header {
+    background-color: #17b0c2;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    height:400px;
+}
+
+div.container {
+    padding: 10px;
+}
+button {
+	width:19%;
+	color:white;
+	font-size:20px;	
+	direction:rtl;
+
+}
+#url {
+	color:#CCCCCC;
+	font-size:25px;
+	text-align:center;
+}
+.url_onclick {
+	color:#0000000;
+	font-size:25px;
+	direction:rtl
+}
+.main {
+margin-top:1%;
+}
+</style>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+
+<script src="viewers.js"></script>
+<script src="sub.js"></script>
+<script src="likes.js"></script>
+<script src="communts.js"></script>
+<script src="all.js"></script>
+<script> 
+function input() {
+document.getElementById("url").value = "";
+document.getElementById("url").className = "url_onclick";
+}
+</script>
+
+</head>
+
+<body dir="rtl">
+<center>
+<input type="text" style="width:100%;height:30px;" value="ضع رابط الفديو هنا" id="url" onclick="input()"/>
+<script>
+document.getElementById("url").value = "https://www.youtube.com/watch?v=Y9_gk-h5PLM";
+
+</script>
+<div class="card">
+<div style="background-color:aqua; width:100%">
+<strong>
+<button style="background-color:red" onclick="sub()">المتابعون</button>
+<button style="background-color:fuchsia" onclick="viewcount()">المشهدات</button>
+<button style="background-color:navy" onclick="likecount()">الايكات</button>
+<button style="background-color:#660066" onclick="communtcount();">التعليقات</button>
+<button style="background-color:#3333FF" onclick="all();" >جميع الاحصائيات</button>
+</strong>	
+
+
+</div>
+  <div class="header">
+<p id="type" style="font-size:100%;margin:5px 5px 5px 5px;"></p>
+<p  style="font-size:100%;margin:5px 5px 5px 5px;" id="text">hi</p>
+<p id="span" style="font-size:100%;margin:5px 5px 5px 5px;" ></p>
+
+<div id="main1" class="main">
+<p style="display:none" id="subtext">المتابعين</p>
+<div id="sub" style="display:none;" class="xdsoft">
+<div class="xdsoft_flipcountdown xdsoft_size_md">
+<div class="xdsoft_clearex">
+</div></div></div></div>
+
+<div id="main1" class="main">
+<p style="display:none" id="viewtext">المشهدات</p>
+<div id="views" style="display:none;" class="xdsoft">
+<div class="xdsoft_flipcountdown xdsoft_size_md">
+<div class="xdsoft_clearex">
+</div></div></div></div>
+
+<div id="main1" class="main">
+<p style="display:none" id="liketext">لايكات</p>
+<div id="likes" style="display:none;" class="xdsoft">
+<div class="xdsoft_flipcountdown xdsoft_size_md">
+<div class="xdsoft_clearex">
+</div></div></div></div>
+
+<div id="main1" class="main">
+<p style="display:none" id="communttext">التعليقات</p>
+<div id="communts" style="display:none;" class="xdsoft">
+<div class="xdsoft_flipcountdown xdsoft_size_md">
+<div class="xdsoft_clearex">
+</div></div></div></div>
+
+<!--    <h1 id="answer" style="margin-top:150px;">1</h1> -->
+  </div>
+
+  <div class="container">
+    <p >January 1, 2016</p>
+  </div>
+</div>
+</center>
+</body>
+
+</html>
